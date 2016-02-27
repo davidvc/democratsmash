@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <snippet attachedevent="true" class="scripts.ActorEvents_10" classname="scripts.ActorEvents_10" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="2" name="ActorEvents_10" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="3" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_4_4_TrumpBehavior" classname="scripts.Design_4_4_TrumpBehavior" desc="" description="" design="true" drawOrder="0" id="4" name="AppearingRepublicans" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="CurrentIndex" hidden="false" id="1" name="_CurrentIndex" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="XPosition" hidden="false" id="2" name="_XPosition" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="YPosition" hidden="false" id="3" name="_YPosition" order="2"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="BoxWidth" hidden="false" id="4" name="_BoxWidth" order="3"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="Republicans" hidden="false" id="5" name="_Republicans" order="4"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="3" name="init" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_13" classname="scripts.ActorEvents_13" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="5" name="ActorEvents_13" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_15" classname="scripts.ActorEvents_15" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="6" name="ActorEvents_15" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+</pack>
