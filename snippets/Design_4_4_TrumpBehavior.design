@@ -4,14 +4,18 @@
         <init comment="false" x="23" y="0">
             <group eventID="3" id="-1">
                 <periodic comment="false" x="34" y="25">
-                    <group eventID="3" id="-1"/>
+                    <group eventID="3" id="-1">
+                        <set-val-4-6 comment="false" x="45" y="52">
+                            <int id="0" val=""/>
+                        </set-val-4-6>
+                    </group>
                     <int id="0" val="1"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </periodic>
             </group>
         </init>
     </group>
-    <group eventID="3" id="2">
+    <group eventID="3" id="1">
         <create-actor3 comment="false" x="276" y="292">
             <actortype eid="10" id="0"/>
             <int id="1" val=""/>
@@ -19,7 +23,7 @@
             <int id="3" val="0"/>
         </create-actor3>
     </group>
-    <group eventID="3" id="4">
+    <group eventID="3" id="2">
         <dolater comment="false" x="32" y="301">
             <group eventID="3" id="-1">
                 <die comment="false" x="43" y="328">
@@ -30,5 +34,30 @@
             <ACTOR eid="lastcreated" id="2"/>
         </dolater>
     </group>
+    <group eventID="3" id="3">
+        <times comment="false" x="496" y="209">
+            <get-val-4-12 comment="false" id="0" x="0" y="0"/>
+            <int id="1" val="4"/>
+        </times>
+    </group>
     <group eventID="3" id="-1"/>
+    <group eventID="5" id="0">
+        <event-group-create-kill comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <say-this comment="false" x="26" y="47">
+                    <int id="0" val="createActor"/>
+                </say-this>
+            </group>
+            <int id="0" val="1"/>
+            <actorgroup eid="4" id="1"/>
+        </event-group-create-kill>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="6" id="-1"/>
+            <int id="0" val="createActor"/>
+        </event-custom>
+    </group>
+    <group eventID="6" id="-1"/>
 </groups>
