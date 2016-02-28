@@ -3,11 +3,98 @@
     <group eventID="3" id="0">
         <init comment="false" x="23" y="0">
             <group eventID="3" id="-1">
-                <periodic comment="false" x="34" y="25">
+                <set-val-4-14 comment="false" x="34" y="25">
+                    <int id="0" val="128"/>
+                </set-val-4-14>
+                <periodic comment="false" x="34" y="45">
                     <group eventID="3" id="-1">
-                        <set-val-4-6 comment="false" x="45" y="52">
-                            <int id="0" val=""/>
+                        <set-val-4-6 comment="false" x="45" y="72">
+                            <times comment="false" id="0" x="0" y="0">
+                                <randint comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="4"/>
+                                </randint>
+                                <get-val-4-12 comment="false" id="1" x="0" y="0"/>
+                            </times>
                         </set-val-4-6>
+                        <set-val-4-11 comment="false" x="45" y="102">
+                            <times comment="false" id="0" x="0" y="0">
+                                <randint comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="2"/>
+                                </randint>
+                                <get-val-4-14 comment="false" id="1" x="0" y="0"/>
+                            </times>
+                        </set-val-4-11>
+                        <set-val-4-13 comment="false" x="45" y="132">
+                            <randint comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                                <int id="1" val="9"/>
+                            </randint>
+                        </set-val-4-13>
+                        <if comment="false" x="45" y="157">
+                            <group eventID="3" id="-1">
+                                <create-actor3 comment="false" x="56" y="187">
+                                    <actortype eid="10" id="0"/>
+                                    <get-val-4-6 comment="false" id="1" x="0" y="0"/>
+                                    <get-val-4-11 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                            </group>
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-val-4-13 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="5"/>
+                            </lesseq>
+                        </if>
+                        <if comment="false" x="45" y="231">
+                            <group eventID="3" id="-1">
+                                <create-actor3 comment="false" x="56" y="266">
+                                    <actortype eid="15" id="0"/>
+                                    <get-val-4-6 comment="false" id="1" x="0" y="0"/>
+                                    <get-val-4-11 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <more comment="false" id="0" x="0" y="0">
+                                    <get-val-4-13 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="5"/>
+                                </more>
+                                <lesseq comment="false" id="1" x="0" y="0">
+                                    <get-val-4-13 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="8"/>
+                                </lesseq>
+                            </and>
+                        </if>
+                        <if comment="false" x="45" y="310">
+                            <group eventID="3" id="-1">
+                                <create-actor3 comment="false" x="56" y="345">
+                                    <actortype eid="13" id="0"/>
+                                    <get-val-4-6 comment="false" id="1" x="0" y="0"/>
+                                    <get-val-4-11 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <more comment="false" id="0" x="0" y="0">
+                                    <get-val-4-13 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="8"/>
+                                </more>
+                                <lesseq comment="false" id="1" x="0" y="0">
+                                    <get-val-4-13 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="9"/>
+                                </lesseq>
+                            </and>
+                        </if>
+                        <dolater comment="false" x="45" y="389">
+                            <group eventID="3" id="-1">
+                                <die comment="false" x="56" y="416">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                </die>
+                            </group>
+                            <int id="0" val=".50"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
                     </group>
                     <int id="0" val="1"/>
                     <ACTOR eid="lastcreated" id="2"/>
@@ -15,49 +102,18 @@
             </group>
         </init>
     </group>
-    <group eventID="3" id="1">
-        <create-actor3 comment="false" x="276" y="292">
-            <actortype eid="10" id="0"/>
-            <int id="1" val=""/>
-            <int id="2" val=""/>
-            <int id="3" val="0"/>
-        </create-actor3>
-    </group>
-    <group eventID="3" id="2">
-        <dolater comment="false" x="32" y="301">
-            <group eventID="3" id="-1">
-                <die comment="false" x="43" y="328">
-                    <ACTOR eid="lastcreated" id="0"/>
-                </die>
-            </group>
-            <int id="0" val=".50"/>
-            <ACTOR eid="lastcreated" id="2"/>
-        </dolater>
-    </group>
-    <group eventID="3" id="3">
-        <times comment="false" x="496" y="209">
-            <get-val-4-12 comment="false" id="0" x="0" y="0"/>
-            <int id="1" val="4"/>
-        </times>
-    </group>
     <group eventID="3" id="-1"/>
-    <group eventID="5" id="0">
-        <event-group-create-kill comment="false" x="15" y="15">
-            <group eventID="5" id="-1">
-                <say-this comment="false" x="26" y="47">
-                    <int id="0" val="createActor"/>
-                </say-this>
+    <group eventID="4" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <play-sound4 comment="false" x="26" y="42">
+                    <int id="0" val="0"/>
+                    <sound id="1"/>
+                </play-sound4>
             </group>
-            <int id="0" val="1"/>
-            <actorgroup eid="4" id="1"/>
-        </event-group-create-kill>
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="0"/>
+        </event-mouse-enter-exit-actor>
     </group>
-    <group eventID="5" id="-1"/>
-    <group eventID="6" id="0">
-        <event-custom comment="false" x="15" y="15">
-            <group eventID="6" id="-1"/>
-            <int id="0" val="createActor"/>
-        </event-custom>
-    </group>
-    <group eventID="6" id="-1"/>
+    <group eventID="4" id="-1"/>
 </groups>

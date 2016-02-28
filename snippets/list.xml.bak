@@ -10,11 +10,13 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_4_4_TrumpBehavior" classname="scripts.Design_4_4_TrumpBehavior" desc="" description="" design="true" drawOrder="0" id="4" name="AppearingRepublicans" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="XPosition" hidden="false" id="6" name="_XPosition" order="0"/>
-        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Trump" hidden="false" id="8" name="_Trump" order="2"/>
-        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Cruz" hidden="false" id="9" name="_Cruz" order="4"/>
-        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Rubio" hidden="false" id="10" name="_Rubio" order="5"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="YPosition" hidden="false" id="11" name="_YPosition" order="3"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="BoxWidth" hidden="false" id="12" name="_BoxWidth" order="1"/>
+        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Trump" hidden="false" id="8" name="_Trump" order="3"/>
+        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Cruz" hidden="false" id="9" name="_Cruz" order="5"/>
+        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Rubio" hidden="false" id="10" name="_Rubio" order="6"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="YPosition" hidden="false" id="11" name="_YPosition" order="4"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="BoxWidth" hidden="false" id="12" name="_BoxWidth" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="ActorNumber" hidden="false" id="13" name="_ActorNumber" order="7"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="BoxHeight" hidden="false" id="14" name="_BoxHeight" order="2"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="3" name="init" order="3" repeats="true"/>
