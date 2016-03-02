@@ -20,8 +20,7 @@
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="3" name="init" order="3" repeats="true"/>
-            <event displayName="Actor Created" enabled="true" id="5" name="event-group-create-kill" order="4" repeats="true"/>
-            <event displayName="Custom Event" enabled="true" id="6" name="event-custom" order="5" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="4" name="event-mouse-enter-exit-actor" order="5" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_13" classname="scripts.ActorEvents_13" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="5" name="ActorEvents_13" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
