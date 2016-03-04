@@ -92,33 +92,15 @@
                                     <ACTOR eid="lastcreated" id="0"/>
                                 </die>
                             </group>
-                            <int id="0" val="3"/>
+                            <int id="0" val=".7"/>
                             <ACTOR eid="lastcreated" id="2"/>
                         </dolater>
                     </group>
-                    <int id="0" val="4"/>
+                    <int id="0" val="1"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </periodic>
             </group>
         </init>
     </group>
     <group eventID="3" id="-1"/>
-    <group eventID="4" id="0">
-        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
-            <group eventID="4" id="-1">
-                <play-sound4 comment="false" x="26" y="42">
-                    <int id="0" val="0"/>
-                    <sound eid="17" id="1"/>
-                </play-sound4>
-            </group>
-            <ACTOR eid="lastcreated" id="0"/>
-            <int id="1" val="2"/>
-        </event-mouse-enter-exit-actor>
-    </group>
-    <group eventID="4" id="1">
-        <die comment="false" x="591" y="24">
-            <ACTOR eid="lastcreated" id="0"/>
-        </die>
-    </group>
-    <group eventID="4" id="-1"/>
 </groups>

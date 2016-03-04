@@ -39,6 +39,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -68,28 +69,66 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_13 extends ActorScript
+class Design_4_4_TrumpBehavior extends SceneScript
 {
+	public var _XPosition:Float;
+	public var _Trump:ActorType;
+	public var _Cruz:ActorType;
+	public var _Rubio:ActorType;
+	public var _YPosition:Float;
+	public var _BoxWidth:Float;
+	public var _ActorNumber:Float;
+	public var _BoxHeight:Float;
 	
 	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
+		super();
+		nameMap.set("XPosition", "_XPosition");
+		_XPosition = 0.0;
+		nameMap.set("Trump", "_Trump");
+		nameMap.set("Cruz", "_Cruz");
+		nameMap.set("Rubio", "_Rubio");
+		nameMap.set("YPosition", "_YPosition");
+		_YPosition = 0.0;
+		nameMap.set("BoxWidth", "_BoxWidth");
+		_BoxWidth = 0.0;
+		nameMap.set("ActorNumber", "_ActorNumber");
+		_ActorNumber = 0.0;
+		nameMap.set("BoxHeight", "_BoxHeight");
+		_BoxHeight = 0.0;
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && 3 == mouseState)
+		/* ======================== When Creating ========================= */
+		_BoxHeight = asNumber(128);
+		propertyChanged("_BoxHeight", _BoxHeight);
+		runPeriodically(1000 * 1, function(timeTask:TimedTask):Void {
+			_XPosition = asNumber((randomInt(Math.floor(0), Math.floor(4)) * _BoxWidth));
+			propertyChanged("_XPosition", _XPosition);
+			_YPosition = asNumber((randomInt(Math.floor(0), Math.floor(2)) * _BoxHeight));
+			propertyChanged("_YPosition", _YPosition);
+			_ActorNumber = asNumber(randomInt(Math.floor(1), Math.floor(9)));
+			propertyChanged("_ActorNumber", _ActorNumber);
+			if((_ActorNumber <= 5))
 			{
-				recycleActor(actor);
-				playSound(getSound(17));
+				createRecycledActor(getActorType(10), _XPosition, _YPosition, Script.FRONT);
 			}
-		});
+			else if(((_ActorNumber > 5) && (_ActorNumber <= 8)))
+			{
+				createRecycledActor(getActorType(15), _XPosition, _YPosition, Script.FRONT);
+			}
+			else if(((_ActorNumber > 8) && (_ActorNumber <= 9)))
+			{
+				createRecycledActor(getActorType(13), _XPosition, _YPosition, Script.FRONT);
+			}
+			runLater(1000 * .7, function(timeTask:TimedTask):Void {
+				recycleActor(getLastCreatedActor());
+			}, null);
+		}, null);
 		
 	}
 	
