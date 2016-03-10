@@ -107,10 +107,18 @@ class Design_4_4_TrumpBehavior extends SceneScript
 		_BoxHeight = asNumber(128);
 		propertyChanged("_BoxHeight", _BoxHeight);
 		runPeriodically(1000 * 1, function(timeTask:TimedTask):Void {
-			_XPosition = asNumber((randomInt(Math.floor(0), Math.floor(4)) * _BoxWidth));
-			propertyChanged("_XPosition", _XPosition);
 			_YPosition = asNumber((randomInt(Math.floor(0), Math.floor(2)) * _BoxHeight));
 			propertyChanged("_YPosition", _YPosition);
+			if((_YPosition == 0))
+			{
+				_XPosition = asNumber((randomInt(Math.floor(0), Math.floor(3)) * _BoxWidth));
+				propertyChanged("_XPosition", _XPosition);
+			}
+			else
+			{
+				_XPosition = asNumber((randomInt(Math.floor(0), Math.floor(4)) * _BoxWidth));
+				propertyChanged("_XPosition", _XPosition);
+			}
 			_ActorNumber = asNumber(randomInt(Math.floor(1), Math.floor(9)));
 			propertyChanged("_ActorNumber", _ActorNumber);
 			if((_ActorNumber <= 5))

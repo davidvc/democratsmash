@@ -86,6 +86,7 @@ class ActorEvents_15 extends ActorScript
 		{
 			if(wrapper.enabled && 3 == mouseState)
 			{
+				Engine.engine.setGameAttribute("Score", (Engine.engine.getGameAttribute("Score") + 5));
 				recycleActor(actor);
 				playSound(getSound(17));
 			}
