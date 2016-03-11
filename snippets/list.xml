@@ -8,9 +8,7 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="3" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
         <blocks/>
-        <events>
-            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
-        </events>
+        <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_4_4_TrumpBehavior" classname="scripts.Design_4_4_TrumpBehavior" desc="" description="" design="true" drawOrder="0" id="4" name="AppearingRepublicans" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="XPosition" hidden="false" id="6" name="_XPosition" order="0"/>

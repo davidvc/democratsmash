@@ -88,7 +88,7 @@ class ActorEvents_13 extends ActorScript
 			{
 				Engine.engine.setGameAttribute("Score", (Engine.engine.getGameAttribute("Score") + 10));
 				recycleActor(actor);
-				playSound(getSound(17));
+				playSound(getSound(19));
 			}
 		});
 		

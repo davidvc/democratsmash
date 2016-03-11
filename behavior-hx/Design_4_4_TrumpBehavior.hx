@@ -106,7 +106,7 @@ class Design_4_4_TrumpBehavior extends SceneScript
 		/* ======================== When Creating ========================= */
 		_BoxHeight = asNumber(128);
 		propertyChanged("_BoxHeight", _BoxHeight);
-		runPeriodically(1000 * 1, function(timeTask:TimedTask):Void {
+		runPeriodically(1000 * randomInt(Math.floor(1), Math.floor(1.5)), function(timeTask:TimedTask):Void {
 			_YPosition = asNumber((randomInt(Math.floor(0), Math.floor(2)) * _BoxHeight));
 			propertyChanged("_YPosition", _YPosition);
 			if((_YPosition == 0))
@@ -136,6 +136,9 @@ class Design_4_4_TrumpBehavior extends SceneScript
 			runLater(1000 * .7, function(timeTask:TimedTask):Void {
 				recycleActor(getLastCreatedActor());
 			}, null);
+		}, null);
+		runLater(1000 * 30, function(timeTask:TimedTask):Void {
+			reloadCurrentScene(createFadeOut(1, Utils.getColorRGB(0,0,0)), createRectangleIn(1, Utils.getColorRGB(0,0,0)));
 		}, null);
 		
 	}

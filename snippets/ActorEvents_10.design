@@ -14,7 +14,7 @@
                 </die>
                 <play-sound4 comment="false" x="26" y="99">
                     <int id="0" val="0"/>
-                    <sound eid="17" id="1"/>
+                    <sound eid="20" id="1"/>
                 </play-sound4>
             </group>
             <ACTOR eid="this" id="0"/>
