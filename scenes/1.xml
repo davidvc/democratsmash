@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="1" extheight="384" extwidth="544" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="0.0" height="320" id="1" name="Test" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="480">
+<scene depth="1" desc="" eventsnippetid="8" extheight="384" extwidth="544" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="0.0" height="320" id="1" name="preivew" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="480">
     <layers>
-        <color-bg blue="255" green="255" red="255"/>
+        <color-bg blue="153" green="153" red="153"/>
         <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
     </layers>
     <joints/>
@@ -9,6 +9,11 @@
     <terrainRegions/>
     <actors/>
     <snippets/>
-    <terrain/>
+    <terrain>
+        <p pts="4,32.0,0.0,32.0,16.0,0.0,16.0,0.0,0.0" x="224.0" y="160.0"/>
+        <p pts="4,32.0,0.0,32.0,16.0,0.0,16.0,0.0,0.0" x="224.0" y="128.0"/>
+        <p pts="4,64.0,0.0,64.0,16.0,0.0,16.0,0.0,0.0" x="256.0" y="64.0"/>
+        <p pts="4,64.0,0.0,64.0,16.0,0.0,16.0,0.0,0.0" x="256.0" y="96.0"/>
+    </terrain>
     <atlases members="" retainAtlases="true"/>
 </scene>
