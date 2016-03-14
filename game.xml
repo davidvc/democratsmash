@@ -74,7 +74,7 @@
     <props/>
     <attributes>
         <number cid="-1" id="0" name="Score" save="true" value="0.0"/>
-        <number cid="-1" id="1" name="Timer" save="true" value="10"/>
+        <number cid="-1" id="1" name="Timer" save="true" value="10.0"/>
     </attributes>
     <collisions>
         <poly id="0" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
@@ -105,7 +105,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,8,9,10,12,13,15,17,18,19,20," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,8,9,10,12,13,15,17,18,19,20,21,22,23,24," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

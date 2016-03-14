@@ -1,15 +1,16 @@
 #
-#Sun Mar 13 21:02:53 PDT 2016
+#Sun Mar 13 21:19:09 PDT 2016
 style=plain
 alphabet=
-color=\#000000
+color=\#333333
 shadow.y=0
-family=SansSerif
+family=orange juice 2.0.ttf
 shadow.x=0
 shadow.color=\#000000
 gradient.offset=0
 shadow.blur=0
 chars=all
+gradient.color=\#000000
 stroke.size=0
 antialias=true
-size=28
+size=39
