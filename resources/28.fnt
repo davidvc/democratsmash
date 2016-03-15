@@ -1,0 +1,17 @@
+#
+#Mon Mar 14 21:12:44 PDT 2016
+style=bold
+alphabet=
+stroke.color=\#000000
+color=\#ff33cc
+shadow.y=0
+family=SansSerif
+shadow.x=0
+shadow.color=\#000000
+gradient.offset=0
+shadow.blur=0
+chars=all
+gradient.color=\#ff00ff
+stroke.size=3
+antialias=true
+size=30

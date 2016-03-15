@@ -68,13 +68,14 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_15 extends ActorScript
+class Design_12_12_buttonpusherthingymabober extends ActorScript
 {
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Actor", "actor");
 		
 	}
 	
@@ -86,9 +87,7 @@ class ActorEvents_15 extends ActorScript
 		{
 			if(wrapper.enabled && 3 == mouseState)
 			{
-				Engine.engine.setGameAttribute("Score", (Engine.engine.getGameAttribute("Score") + 5));
-				recycleActor(actor);
-				playSound(getSound(29));
+				switchScene(GameModel.get().scenes.get(0).getID(), createFadeOut(1, Utils.getColorRGB(0,0,0)), createFadeIn(1, Utils.getColorRGB(0,0,0)));
 			}
 		});
 		

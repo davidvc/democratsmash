@@ -52,8 +52,15 @@
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_24" classname="scripts.ActorEvents_24" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="10" name="ActorEvents_24" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+    <snippet attachedevent="true" class="scripts.ActorEvents_26" classname="scripts.ActorEvents_26" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="11" name="ActorEvents_26" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_12_12_buttonpusherthingymabober" classname="scripts.Design_12_12_buttonpusherthingymabober" desc="" description="" design="true" drawOrder="0" id="12" name="button pusher thingymabober" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+        </events>
     </snippet>
 </pack>

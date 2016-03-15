@@ -108,7 +108,9 @@ class Design_4_4_TrumpBehavior extends SceneScript
 			Engine.engine.setGameAttribute("Timer", (Engine.engine.getGameAttribute("Timer") - 1));
 			if((Engine.engine.getGameAttribute("Timer") == 0))
 			{
-				
+				switchScene(GameModel.get().scenes.get(1).getID(), createFadeOut(1, Utils.getColorRGB(0,0,0)), createFadeIn(1, Utils.getColorRGB(0,0,0)));
+				Engine.engine.setGameAttribute("Timer", 300);
+				Engine.engine.setGameAttribute("Score", 0);
 			}
 		}, null);
 		_BoxHeight = asNumber(128);

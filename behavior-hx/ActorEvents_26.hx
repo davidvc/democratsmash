@@ -68,7 +68,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_15 extends ActorScript
+class ActorEvents_26 extends ActorScript
 {
 	
 	
@@ -80,17 +80,6 @@ class ActorEvents_15 extends ActorScript
 	
 	override public function init()
 	{
-		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && 3 == mouseState)
-			{
-				Engine.engine.setGameAttribute("Score", (Engine.engine.getGameAttribute("Score") + 5));
-				recycleActor(actor);
-				playSound(getSound(29));
-			}
-		});
 		
 	}
 	
