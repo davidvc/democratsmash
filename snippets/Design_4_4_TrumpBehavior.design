@@ -153,8 +153,8 @@
                         </dolater>
                     </group>
                     <randint comment="false" id="0" x="0" y="0">
-                        <int id="0" val="1"/>
-                        <int id="1" val="1.5"/>
+                        <int id="0" val="0.1"/>
+                        <int id="1" val="2.7"/>
                     </randint>
                     <ACTOR eid="lastcreated" id="2"/>
                 </periodic>

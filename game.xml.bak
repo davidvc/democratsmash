@@ -74,7 +74,7 @@
     <props/>
     <attributes>
         <number cid="-1" id="0" name="Score" save="true" value="0.0"/>
-        <number cid="-1" id="1" name="Timer" save="true" value="10.0"/>
+        <number cid="-1" id="1" name="Timer" save="true" value="300.0"/>
     </attributes>
     <collisions>
         <poly id="0" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
